@@ -1,0 +1,52 @@
+page-login {
+
+    .bg-image{
+        background-image: linear-gradient(to bottom left, #273844, #5b896f, #3c4048);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .no-scroll .scroll-contant{
+        overflow: hidden;
+    }
+
+    .logo{
+        display: block;
+        height: 10vh;
+        margin: auto;
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+    }
+
+    div{
+        position: relative;
+
+        .list{
+            width: 60%;
+            display: block;
+            margin-left: 20% !important;
+        }
+    }
+
+
+    .label{
+        background-color: rgba(255, 255, 255, 0.0)
+    }
+
+    .forgot-password{
+        font-size: 0.8em; 
+        color: #ebebeb;
+        text-align: center;
+    }
+
+    .text-white{
+        color: white;
+    }
+
+    ion-label{
+        color: #f4f4f4 !important;
+    }
+
+    // $label-md-text-color-focused: color($colors, light);
+}
