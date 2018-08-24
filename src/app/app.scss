@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,11 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+}
+
+.btn {
+  background-image: linear-gradient(to right, #378bba 51%, #2fb9dc 100%);
+}
