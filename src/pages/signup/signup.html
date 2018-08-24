@@ -16,7 +16,11 @@
 <ion-content padding>
   <dynamic-form 
     [config]="config" 
-    #agentForm 
+    #testForm 
     > 
   </dynamic-form>
+
+  <button margin-top ion-button round icon-end (click)="signup(testForm.formGroup)" class="btn">
+    Signup
+  </button>
 </ion-content>

@@ -42,6 +42,41 @@ export class SignupPage {
       value: '',
       disabled : false
     },
+    {
+      type: 'select',
+      multiple: 'false',
+      label: 'Gender',
+      name: 'gender',
+      placeholder: 'Select your gender',
+      options: [ 'male', 'female', 'special'],
+      validation: [Validators.required],
+      value: '',
+      disabled : false
+    },
+    {
+      type: 'checkbox',
+      label: 'Married',
+      name: 'married',
+      placeholder: 'Check if you are maried',
+      validation: [Validators.required],
+      value: false,
+      disabled : false
+    },
+    {
+      type: 'select',
+      multiple: 'true',
+      label: 'travel mode',
+      name: 'travel',
+      placeholder: 'How do you travel to office?',
+      options: [ 'car', 'bike', 'bus'],
+      validation: [Validators.required],
+      value: '',
+      disabled : false
+    },
   ]
+
+  signup(form){
+    console.log(form)
+  }
 
 }

@@ -5,10 +5,12 @@ import { FormGroup, FormBuilder } from '@angular/forms';
     selector: 'dynamic-form',
     // styleUrls: ['dynamic-form.component.scss'],
     template: `
+    
     <form
       class="dynamic-form"
       [formGroup]="form">
 
+      <ion-list inset>
       <div
       *ngFor="let field of config;"
       >
@@ -18,6 +20,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
               [group]="form">
           </ng-container>
       </div>
+      </ion-list>
     </form>
   `
 })

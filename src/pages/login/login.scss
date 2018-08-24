@@ -1,7 +1,7 @@
 page-login {
 
     .bg-image{
-        background-image: linear-gradient(0deg,rgba(97, 97, 97, 0.3),rgba(43, 43, 43, 0.54)),url(../assets/imgs/login-1.jpg);
+        background-image: linear-gradient(to bottom left, #273844, #5b896f, #3c4048);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -43,4 +43,10 @@ page-login {
     .text-white{
         color: white;
     }
+
+    ion-label{
+        color: #f4f4f4 !important;
+    }
+
+    // $label-md-text-color-focused: color($colors, light);
 }

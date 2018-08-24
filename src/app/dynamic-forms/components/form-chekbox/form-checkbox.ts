@@ -9,16 +9,11 @@ import { FormGroup } from '@angular/forms';
       class="dynamic-field" 
       [formGroup]="group">
       <ion-label stacked>{{ config.label }}</ion-label>
-      <ion-input
-        type="text"
-        [placeholder]="config.placeholder"
-        [formControlName]="config.name" 
-        >
-      </ion-input>
+      <ion-checkbox [formControlName]="config.name"  ></ion-checkbox>
     </ion-item >
   `,
 })
-export class FormInputComponent {
+export class FormCheckboxComponent {
   config;
   group: FormGroup;
 

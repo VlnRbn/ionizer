@@ -2,10 +2,12 @@ import { Directive, Input, ComponentFactoryResolver, ViewContainerRef, OnInit } 
 import { FormGroup } from '@angular/forms';
 import { FormInputComponent } from '../form-input/form-input';
 import { FormSelectComponent } from '../form-select/form-select';
+import { FormCheckboxComponent } from '../form-chekbox/form-checkbox';
 
 const components = {
   input: FormInputComponent,
-  select: FormSelectComponent
+  select: FormSelectComponent,
+  checkbox: FormCheckboxComponent
 };
 
 @Directive({
