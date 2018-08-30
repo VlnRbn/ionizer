@@ -1,3 +1,51 @@
 page-home {
-
+  .toolbar-ios ion-title {
+    padding: 0 75px 1px;
+  }
+  .tab-hearder {
+    background: #232222;
+    flex: 1;
+    height: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0 12px;
+    span {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      color: #f4f4f4;
+    }
+  }
+  .swipe-tab-header-wrapper-flexbox {
+    display: flex;
+    background: #232222;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    .tab-hearder {
+      flex: 0 0 auto;
+    }
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .active {
+    animation-name: oppo;
+    animation-duration: 0.5s;
+    border-bottom: 2px solid white;
+  }
+  @keyframes oppo {
+    from {
+      opacity: 0.75;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }

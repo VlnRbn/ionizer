@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { DynamicFormModule } from './dynamic-forms/dynamic-forms.module';
+import { MainTabsPage } from '../pages/main-tabs/main-tabs';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DynamicFormModule } from './dynamic-forms/dynamic-forms.module';
     HomePage,
     ListPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    MainTabsPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { DynamicFormModule } from './dynamic-forms/dynamic-forms.module';
     HomePage,
     ListPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    MainTabsPage
   ],
   providers: [
     StatusBar,
